@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: docker/gemm-cuda.Dockerfile
+    command: ["sleep", "infinity"]
     init: true
     deploy:
       resources:
